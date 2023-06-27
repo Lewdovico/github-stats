@@ -1,144 +1,145 @@
-<svg id="gh-dark-mode-only" width="360" height="210" xmlns="http://www.w3.org/2000/svg">
-<style>
-svg {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
-  font-size: 14px;
-  line-height: 21px;
-}
+<svg width="360" height="210" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    svg {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+      font-size: 14px;
+      line-height: 21px;
+    }
 
-#background {
-  width: calc(100% - 10px);
-  height: calc(100% - 10px);
-  fill: white;
-  stroke: rgb(225, 228, 232);
-  stroke-width: 1px;
-  rx: 6px;
-  ry: 6px;
-}
+    #background {
+      width: calc(100% - 10px);
+      height: calc(100% - 10px);
+      fill: white;
+      stroke: rgb(225, 228, 232);
+      stroke-width: 1px;
+      rx: 6px;
+      ry: 6px;
+    }
 
-#gh-dark-mode-only:target #background {
-  fill: #0d1117;
-  stroke-width: 0.5px;
-}
+    foreignObject {
+      width: calc(100% - 10px - 32px);
+      height: calc(100% - 10px - 24px);
+    }
 
-foreignObject {
-  width: calc(100% - 10px - 32px);
-  height: calc(100% - 10px - 24px);
-}
+    h2 {
+      margin-top: 0;
+      margin-bottom: 0.75em;
+      line-height: 24px;
+      font-size: 16px;
+      font-weight: 600;
+      color: rgb(36, 41, 46);
+      fill: rgb(36, 41, 46);
+    }
 
-h2 {
-  margin-top: 0;
-  margin-bottom: 0.75em;
-  line-height: 24px;
-  font-size: 16px;
-  font-weight: 600;
-  color: rgb(36, 41, 46);
-  fill: rgb(36, 41, 46);
-}
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
 
-#gh-dark-mode-only:target h2 {
-  color: #c9d1d9;
-  fill: #c9d1d9;
-}
+    li {
+      display: inline-flex;
+      font-size: 12px;
+      margin-right: 2ch;
+      align-items: center;
+      flex-wrap: nowrap;
+      transform: translateX(-500%);
+      animation: slideIn 2s ease-in-out forwards;
+    }
 
-ul {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
+    div.ellipsis {
+      height: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
 
-li {
-  display: inline-flex;
-  font-size: 12px;
-  margin-right: 2ch;
-  align-items: center;
-  flex-wrap: nowrap;
-  transform: translateX(-500%);
-  animation: slideIn 2s ease-in-out forwards;
-}
+    .octicon {
+      fill: rgb(88, 96, 105);
+      margin-right: 0.5ch;
+      vertical-align: top;
+    }
 
-@keyframes slideIn {
-  to {
-    transform: translateX(0);
-  }
-}
+    .progress {
+      display: flex;
+      height: 8px;
+      overflow: hidden;
+      background-color: rgb(225, 228, 232);
+      border-radius: 6px;
+      outline: 1px solid transparent;
+      margin-bottom: 1em;
+    }
 
-div.ellipsis {
-  height: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+    .progress-item {
+      outline: 2px solid rgb(225, 228, 232);
+      border-collapse: collapse;
+    }
 
-.octicon {
-  fill: rgb(88, 96, 105);
-  margin-right: 0.5ch;
-  vertical-align: top;
-}
+    .lang {
+      font-weight: 600;
+      margin-right: 4px;
+      color: rgb(36, 41, 46);
+    }
 
-#gh-dark-mode-only:target .octicon {
-  color: #8b949e;
-  fill: #8b949e;
-}
+    .percent {
+      color: rgb(88, 96, 105)
+    }
 
-.progress {
-  display: flex;
-  height: 8px;
-  overflow: hidden;
-  background-color: rgb(225, 228, 232);
-  border-radius: 6px;
-  outline: 1px solid transparent;
-  margin-bottom: 1em;
-}
+    @media (prefers-color-scheme: dark) {
+      #background {
+        fill: #0d1117;
+        stroke-width: 0.5px;
+      }
 
-#gh-dark-mode-only:target .progress {
-  background-color: rgba(110, 118, 129, 0.4);
-}
+      h2 {
+        color: #c9d1d9;
+        fill: #c9d1d9;
+      }
 
-.progress-item {
-  outline: 2px solid rgb(225, 228, 232);
-  border-collapse: collapse;
-}
+      .octicon {
+        color: #8b949e;
+        fill: #8b949e;
+      }
 
-#gh-dark-mode-only:target .progress-item {
-  outline: 2px solid #393f47;
-}
+      .progress {
+        background-color: rgba(110, 118, 129, 0.4);
+      }
 
-.lang {
-  font-weight: 600;
-  margin-right: 4px;
-  color: rgb(36, 41, 46);
-}
+      .progress-item {
+        outline: 2px solid #393f47;
+      }
 
-#gh-dark-mode-only:target .lang {
-  color: #c9d1d9;
-}
+      .lang {
+        color: #c9d1d9;
+      }
 
-.percent {
-  color: rgb(88, 96, 105)
-}
+      .percent {
+        color: #8b949e;
+      }
+    }
 
-#gh-dark-mode-only:target .percent {
-  color: #8b949e;
-}
-</style>
-<g>
-<rect x="5" y="5" id="background" />
-<g>
-<foreignObject x="21" y="17" width="318" height="176">
-<div xmlns="http://www.w3.org/1999/xhtml" class="ellipsis">
+    @keyframes slideIn {
+      to {
+        transform: translateX(0);
+      }
+    }
+  </style>
+  <g>
+    <rect x="5" y="5" id="background" />
+    <g>
+      <foreignObject x="21" y="17" width="318" height="176">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="ellipsis">
 
-<h2>Languages Used (By File Size)</h2>
+          <h2>Languages Used (By File Size)</h2>
 
-<div>
-<span class="progress">
-<span style="background-color: #7e7eff;width: 88.943%;" class="progress-item"></span><span style="background-color: #f1e05a;width: 3.611%;" class="progress-item"></span><span style="background-color: #3572A5;width: 2.171%;" class="progress-item"></span><span style="background-color: #555555;width: 1.687%;" class="progress-item"></span><span style="background-color: #89e051;width: 1.621%;" class="progress-item"></span><span style="background-color: #563d7c;width: 0.469%;" class="progress-item"></span><span style="background-color: #4F5D95;width: 0.431%;" class="progress-item"></span><span style="background-color: #a91e50;width: 0.267%;" class="progress-item"></span><span style="background-color: #0298c3;width: 0.258%;" class="progress-item"></span><span style="background-color: #3fb68b;width: 0.118%;" class="progress-item"></span><span style="background-color: #701516;width: 0.088%;" class="progress-item"></span><span style="background-color: #e34c26;width: 0.088%;" class="progress-item"></span><span style="background-color: #dea584;width: 0.068%;" class="progress-item"></span><span style="background-color: #5e5086;width: 0.044%;" class="progress-item"></span><span style="background-color: #000080;width: 0.040%;" class="progress-item"></span><span style="background-color: #f34b7d;width: 0.033%;" class="progress-item"></span><span style="background-color: #c065db;width: 0.023%;" class="progress-item"></span><span style="background-color: #ecdebe;width: 0.011%;" class="progress-item"></span><span style="background-color: #00ADD8;width: 0.011%;" class="progress-item"></span><span style="background-color: #427819;width: 0.010%;" class="progress-item"></span><span style="background-color: #41b883;width: 0.007%;" class="progress-item"></span><span style="background-color: #32AB90;width: 0.001%;" class="progress-item"></span><span style="background-color: #C1F12E;width: 0.000%;" class="progress-item"></span><span style="background-color: #DA3434;width: 0.000%;" class="progress-item"></span>
-</span>
-</div>
+          <div>
+            <span class="progress">
+              <span style="background-color: #7e7eff;width: 88.943%;" class="progress-item"></span><span style="background-color: #f1e05a;width: 3.611%;" class="progress-item"></span><span style="background-color: #3572A5;width: 2.171%;" class="progress-item"></span><span style="background-color: #555555;width: 1.686%;" class="progress-item"></span><span style="background-color: #89e051;width: 1.621%;" class="progress-item"></span><span style="background-color: #563d7c;width: 0.469%;" class="progress-item"></span><span style="background-color: #4F5D95;width: 0.431%;" class="progress-item"></span><span style="background-color: #a91e50;width: 0.267%;" class="progress-item"></span><span style="background-color: #0298c3;width: 0.258%;" class="progress-item"></span><span style="background-color: #3fb68b;width: 0.118%;" class="progress-item"></span><span style="background-color: #701516;width: 0.088%;" class="progress-item"></span><span style="background-color: #e34c26;width: 0.088%;" class="progress-item"></span><span style="background-color: #dea584;width: 0.068%;" class="progress-item"></span><span style="background-color: #5e5086;width: 0.044%;" class="progress-item"></span><span style="background-color: #000080;width: 0.040%;" class="progress-item"></span><span style="background-color: #f34b7d;width: 0.033%;" class="progress-item"></span><span style="background-color: #c065db;width: 0.023%;" class="progress-item"></span><span style="background-color: #ecdebe;width: 0.011%;" class="progress-item"></span><span style="background-color: #00ADD8;width: 0.011%;" class="progress-item"></span><span style="background-color: #427819;width: 0.010%;" class="progress-item"></span><span style="background-color: #41b883;width: 0.007%;" class="progress-item"></span><span style="background-color: #32AB90;width: 0.001%;" class="progress-item"></span><span style="background-color: #C1F12E;width: 0.000%;" class="progress-item"></span><span style="background-color: #DA3434;width: 0.000%;" class="progress-item"></span>
+            </span>
+          </div>
 
-<ul>
-
-
+          <ul>
+            
 <li style="animation-delay: 0ms;">
 <svg xmlns="http://www.w3.org/2000/svg" class="octicon" style="fill:#7e7eff;"
 viewBox="0 0 16 16" version="1.1" width="16" height="16"><path
@@ -355,11 +356,10 @@ fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path></svg>
 </li>
 
 
+          </ul>
 
-</ul>
-
-</div>
-</foreignObject>
-</g>
-</g>
+        </div>
+      </foreignObject>
+    </g>
+  </g>
 </svg>
